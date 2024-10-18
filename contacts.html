@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - YD Arita Auto Supply</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <header>
+      <div class="logo-container">
+          <a href="home.html">
+              <img class="logo" src="pictures/logo2.png" alt="YD Arita Auto Supply Logo">
+          </a>
+      </div>
+  
+       <!-- NAV FOR DESKTOP AND TABLET -->
+       <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav id="nav-menu" class="nav-hidden">
+        <ul class="nav-buttons">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="gradient-section">
+        <img src="pictures/main.png" alt="Main" usemap="#imagemap">
+    
+        <map name="imagemap">
+            <area target="" href="products.html" alt="engine parts" title="engine parts" href="" coords="1567,222,1098,156" shape="rect">
+            <area target="" href="products.html" alt="oil filter" title="oil filter" href="" coords="1164,235,1564,298" shape="rect">
+            <area target="" href="products.html" alt="battery" title="battery" href="" coords="1209,309,1565,372" shape="rect">
+        </map>
+        
+      </section>
+
+      <main>
+        <h2 class="con-head">Visit Us at Dalan Bayu, San Matias, Guagua Pampanga</h2>
+
+        <a href="https://maps.app.goo.gl/zC4p3wD9Aa7NShBH7" target="_blank">
+            <img class="map" src="pictures/map.png" alt="map-location"></a>
+                <p class="map-info">Phone: +639685810425<br>
+                    Email: ydaritaautosupply@gmail.com<br>
+                    FB: YD Arita AS</p>
+
+        <div class="contact-form">
+            <p class="order-title">ORDER FORM</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                    <input type="tel" placeholder="Mobile Number" required pattern="[0-9]{11}" title="Please enter a valid mobile number with 11 digits">
+                </div>
+                
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+      </main>
+      
+
+    
+    <!-- Footer Section -->
+    <footer class="footermob footertab footerdesk">
+      <div class="left-mob left-tab left-desk">
+          <a href="home.html">
+              <img src="pictures/logo.png" alt="YD Logo" class="logo2mob logo2tab logo2desk">
+          </a>
+              <p class="descmob desctab descdesk">Dalan Bayu, San Matias, <br>Guagua, Pampanga <br> +639685810425</p>
+      </div>
+  
+      <div class="center-mob center-desk center-tab">
+        <a href="home.html" class="footer-link">Home</a>
+        <a href="products.html" class="footer-link">Products</a>
+        <a href="contacts.html" class="footer-link">Contact</a>
+        <a href="services.html" class="footer-link">Services</a>
+      </div>
+  
+      <div class="right-mob right-desk right-tab">
+        <a href="https://www.facebook.com/christructure" target="_blank">
+          <img src="pictures/fb.png" alt="Facebook" class="social-iconmob social-icontab social-icondesk">
+        </a>
+        <a href="https://www.instagram.com/christructurem" target="_blank" class="ig-only">
+          <img src="pictures/ig.png" alt="Instagram" class="social-iconmob social-icontab social-icondesk">
+        </a>
+      </div>
+    </footer>
+    <script>
+      const burger = document.getElementById('burger');
+      const navMenu = document.getElementById('nav-menu');
+  
+      burger.addEventListener('click', () => {
+          navMenu.classList.toggle('nav-hidden');
+          navMenu.classList.toggle('nav-visible');
+      });
+  </script>
+</body>
+</html>

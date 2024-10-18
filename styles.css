@@ -1,0 +1,939 @@
+/* GENERAL STYLES */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    padding-top: 80px; 
+    overflow-x: hidden;
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    background-color: #FFFFFF;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+
+/* Navigation Header*/
+.logo {
+    height: 70px;
+    padding-left: 20px;
+    max-width: 100%; /* Ensure the logo scales down if necessary */
+    height: auto; /* Maintain aspect ratio */
+  }
+.logo-container {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between logo and burger */
+  padding: 10px; /* Add padding as needed */
+}
+nav {
+    position: relative;
+    display: flex;
+}
+header nav {
+  display: flex; /* Ensure nav is displayed */
+}
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 1px;
+}
+.nav-buttons li a {
+    text-decoration: none;
+    color: #01204E;
+    padding: 10px 50px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.nav-buttons li a:hover,
+.nav-buttons li a:active {
+    background-color: #01204E;
+    color: #D2E0FB;
+}
+
+/* Initial state for nav (hidden on mobile) */
+.nav-hidden {
+  display: none;
+}
+
+/* Visible state for nav */
+.nav-visible {
+  display: flex; /* Or 'block', depending on your layout needs */
+}
+
+/* MAIN IMAGE */
+.gradient-section img {
+    width: 100%;
+    display: block;
+}
+main {
+    text-align: center;
+}
+
+ /* logos */
+ .background-logo {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+    background-color: #EEEEEE; 
+  }
+  .logos-wrapper {
+    display: flex;
+    animation: scroll 10s linear infinite; 
+  }
+  .picpic {
+    margin: 15px 15px; 
+    background-color: white;
+    border-radius: 5px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+
+    /* Footer Styling */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #002b5c;
+      color: white;
+      padding: 0 40px 0 0;
+      height: 200px;
+    }
+     .footer-nav {
+      margin-top: 15px;
+    }
+    .footer-nav .nav-buttons {
+      justify-content: center;
+      gap: 10px;
+    }
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 30px;
+      height: 150px;
+      align-items: center;
+    }
+    .logo2 {
+      width: 100px;
+      margin-right: 10px;
+      align-items: center;
+    }
+    .logo-desc2 {
+      font-size: 16px; 
+      color: black;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+    }
+    .footer-center {
+      display: flex;
+      gap: 100px;
+    }
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+    .footer-right {
+      display: flex;
+      gap: 30px;
+      height: 50px;
+      width: 50px;
+      margin-right: 50px;
+      margin-top: 20px;
+    }
+    .footer-center a {
+      font-size: 20px;
+      gap: 30px;
+    }
+    .ig-only {
+      margin-right: 10px;
+    }
+    .social-icon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  
+  
+
+
+
+    /* HOMEPAGE */
+
+  h1 {
+    color: #01204E;
+    font-size: 4em;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  h2.TSB {
+    color: #800000;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  /* Video Section */
+  .video-section {
+    position: relative; 
+    display: inline-block; 
+    background-color: #EEEEEE;
+    padding: 10px; 
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .video-title {
+    margin-bottom: 0;
+    color: #800000;
+  }
+  .video-cap {
+    margin-top: 0;
+  }
+  .vid-mismo {
+    padding-bottom: 0;
+    width: 50%;
+    height: 30%;
+    margin-bottom: 0;
+  }
+  .vid-link {
+    margin-top: 0;
+    font-size: .8em;
+  }
+  
+ 
+
+  /* PRODUCTS */
+
+  .nav2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #800000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.nav-item img {
+    width: 280px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+.nav2bots {
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    border-color: #800000;
+}
+
+.nav-item-container {
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.nav-item-container:hover {
+    background-color: #ffffff80;
+    border: none;
+}
+
+.prod-top {
+    text-align: center;
+}
+
+.product {
+    color: #01204E;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.prod-def {
+    color: #01204E;
+    margin-bottom: 30px;
+}
+.contact-us {
+    text-decoration: none;
+    color: #01204E;
+    line-height: 1.5;
+}
+
+h3.prod-main {
+    color: #F2E8C6;
+}
+.prod-main-container {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+    background-color: #800000;
+}
+h4.auto-title {
+    color: #01204E;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#auto-id {
+    margin-top: 30px;
+}
+table {
+    width: 80%;             
+    margin: 0 auto;         
+    border-collapse: collapse;
+}
+th {
+    border: 2px solid #01204E; 
+    padding: 8px;           
+    text-align: left; 
+    font-weight: lighter;      
+  }
+
+.table-desc {
+    color: #01204E;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.gradient-batt {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #EBEFF6, #8EACCD);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.batt-container img {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 10px auto; 
+}
+.prod-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #01204E;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    border-color: #800000;
+}
+
+.nav-item-container {
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.avail-size, .sizes {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.batt-size {
+    width: 98%;
+    background-color: #800000;
+    opacity: 70%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+  }
+  
+  ul li strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .container-accs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+  }
+  
+  .column {
+    width: 24%; 
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+  }
+  
+  ul li strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* SERVICES */
+
+  .line {
+    width: 100%;
+    height: 30px;
+    background-color: #01204E;
+  }
+
+  .location {
+    color: #01204E;
+    font-weight: bold;
+    text-align: left;
+    margin: 35px;
+    font-size: 20px;
+  }
+  .order-form {
+    width: 95%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #EEEEEE; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .order-title {
+    color: #800000;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    width: 91.5%;
+    align-items: center;
+    gap: 10px;
+    margin-left: 63px;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #124076;
+    border-radius: 4px;
+    height: 20px;
+}
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #124076;
+    border-radius: 4px;
+    height: 150px;
+}
+input::placeholder, textarea::placeholder {
+    color: #aaa; 
+}
+
+button {
+    width: 10%;
+    padding: 10px;
+    background-color: #800000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover {
+    background-color: #9C2A2A;
+}
+.order-def {
+    color: #01204E;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/*  CONTACTS */
+h2.con-head {
+    color: #800000;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.map {
+    width: 500px;
+    height: auto;
+    margin: 0;
+}
+.map-info {
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.contact-form {
+    width: 97.7%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #EEEEEE; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* burgir */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+  .burger .line {
+    height: 3px;
+    width: 25px;
+    background-color: #01204E;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media (min-width: 320px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+      padding-top: 50px; /* Reduce padding for smaller screens */
+  }
+  header {
+      flex-direction: column; /* Stack logo and nav vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding-bottom: 0px; /* Adjust padding */
+  }
+  .gradient-section {
+    top: 50px;
+  }
+  .mob1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h2.TSB-MOB {
+    font-size: 20px;
+    color: #800000;
+    margin-bottom: 0;
+  }
+  p.pmob {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  /* logos */
+.picmob {
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+.blmob {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.vsmob {
+  position: relative; 
+    display: inline-block; 
+    background-color: #EEEEEE;
+    padding: 10px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+h2.vtmob {
+  font-size: 15px;
+  color: #800000;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+p.vcmob {
+  font-size: 10px;
+  margin-top: 0;
+}
+p.vlmob {
+  font-size: 5px;
+}
+.vmmob {
+  padding-bottom: 0;
+    width: 250px;
+    height: auto;
+    margin-bottom: 0;
+}
+  .logo {
+      height: 50px; /* Smaller logo */
+      padding-left: 0; /* Remove left padding */
+  }
+  .nav-buttons {
+      flex-direction: column; /* Stack nav items */
+      align-items: center; /* Align to the start */
+      padding: 10px 0; /* Add padding */
+      gap: 15px;
+  }
+  .nav-buttons li a {
+      padding: 10px 20px; /* Smaller padding */
+      font-size: 1em; /* Smaller font size */
+  }
+  .video-section {
+      width: 90%; /* Limit width */
+      margin: 0 auto; /* Center align */
+  }
+  .center-mob{
+    display: none;
+  }
+  .left-mob {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 30px;
+      height: 100px;
+      align-items: center;
+  }
+  .footermob {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #002b5c;
+      color: white;
+      padding: 0 40px 0 0;
+      height: 100px;
+  }
+  .logo2mob {
+    width: 50px;
+      margin-right: 10px;
+      align-items: center;
+  }
+  .descmob {
+    font-size: 10px; 
+      color: black;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+  }
+  .right-mob {
+    display: flex;
+      gap: 30px;
+      height: 50px;
+      width: 50px;
+      margin-right: 50px;
+      margin-top: 20px;
+  }
+  .social-iconmob {
+    width: 20px;
+      height: 20px;
+      cursor: pointer;
+  }
+  .burger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  nav {
+    display: none; /* Hide desktop nav */
+  }
+  .nav-hidden {
+    display: none;
+  }
+  .nav-visible {
+    display: block;
+    position: absolute;
+    top: 70px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF; /* Background color of the menu */
+    z-index: 999; /* Ensure it appears on top */
+  }
+}
+
+
+
+
+
+
+
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+  header {
+      flex-direction: row; /* Row layout for header */
+      padding: 15px; /* More padding */
+  }
+  .tab1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  h2.TSB-TAB {
+    font-size: 40px;
+    color: #800000;
+    margin-bottom: 0;
+  }
+  p.ptab {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+    /* logos */
+.pictab {
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  height: 50px;
+  padding: 20px;
+}
+.bltab {
+  margin-bottom: 20px;
+}
+.vstab {
+  position: relative; 
+    display: inline-block; 
+    background-color: #EEEEEE;
+    padding: 10px; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%; 
+}
+h2.vttab {
+  font-size: 40px;
+  color: #800000;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+p.vctab {
+  font-size: 20px;
+  margin-top: 0;
+}
+p.vltab {
+  font-size: 15px;
+}
+.vmtab {
+  padding-bottom: 0;
+    width: 500px;
+    height: auto;
+    margin-bottom: 0;
+}
+.center-tab, .center-desk{
+  display: flex;
+      gap: 100px;
+}
+.left-tab, .left-desk {
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 30px;
+      height: 150px;
+      align-items: center;
+}
+.footertab, .footerdesk {
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #002b5c;
+      color: white;
+      padding: 0 40px 0 0;
+      height: 200px;
+}
+.logo2tab, .logodesk {
+  width: 100px;
+      margin-right: 10px;
+      align-items: center;
+
+}
+.desctab, .descdesk {
+  font-size: 16px; 
+      color: black;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+}
+.right-tab, .right-desk {
+  display: flex;
+      gap: 30px;
+      height: 50px;
+      width: 50px;
+      margin-right: 50px;
+      margin-top: 20px;
+
+}
+.social-icontab, .social-icondesk{
+  width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+  nav {
+    display: flex; /* Show nav on tablet */
+  }
+  .nav-hidden {
+    display: flex; /* Ensure it's displayed */
+  }
+  .nav-buttons {
+      flex-direction: row; /* Change to row layout for tablet */
+      align-items: center; /* Center align items */
+      gap: 10px; /* Adjust gap between nav items */
+      gap: 10px; /* Space between items */
+      list-style-type: none; /* Remove default list styling */
+  }
+  .nav-buttons li a {
+      text-decoration: none;
+      color: #01204E; /* Adjust color as needed */
+      padding: 10px 30px; /* Adjust padding */
+      font-size: 1.1em; /* Slightly larger font size */
+  }
+  .burger {
+    display: none;
+  }
+  .background-logo {
+      overflow: hidden; /* Maintain overflow settings */
+  }
+  .vid-mismo {
+      width: 70%; /* Adjust video width */
+  }
+  .footer {
+      padding: 20px; /* Consistent padding */
+  }
+}
+}
+
+
+
+
+
+
+
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  header {
+      flex-direction: row; /* Ensure header remains in row layout */
+      padding: 20px; /* Adjust padding for desktop */
+  }
+  h2.TSB-DESK {
+    font-size: 50px;
+    color: #800000;
+    margin-bottom: 0;
+  }
+  p.pdesk {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+  .picdesk {
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 70px;
+    padding: 20px;
+  }
+  .bldesk {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .vsdesk {
+    position: relative; 
+      display: inline-block; 
+      background-color: #EEEEEE;
+      padding: 10px; 
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 100%; 
+  }
+  h2.vtdesk {
+    font-size: 50px;
+    color: #800000;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  p.vcdesk {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  p.vldesk {
+    font-size: 15px;
+  }
+  .vmdesk {
+    padding-bottom: 0;
+      width: 700px;
+      height: auto;
+      margin-bottom: 0;
+  }
+  nav {
+    display: flex; /* Ensure nav is displayed on desktop */
+  }
+  .nav-hidden {
+    display: flex; /* Ensure it's displayed */
+  }
+  .nav-buttons {
+      flex-direction: row; /* Change to row layout for tablet */
+      align-items: center; /* Center align items */
+      gap: 10px; /* Adjust gap between nav items */
+      gap: 10px; /* Space between items */
+      list-style-type: none; /* Remove default list styling */
+  }
+  .nav-buttons li a {
+      text-decoration: none;
+      color: #01204E; /* Adjust color as needed */
+      padding: 10px 30px; /* Adjust padding */
+      font-size: 1.1em; /* Slightly larger font size */
+  }
+  .burger {
+    display: none;
+  }
+  
+  .background-logo {
+      overflow: hidden; /* Maintain overflow settings */
+  }
+}
+  
+
